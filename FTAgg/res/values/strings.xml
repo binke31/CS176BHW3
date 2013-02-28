@@ -5,5 +5,9 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="app_id">275495799249367</string>
+    <string name="fblog">Login to Facebook</string>
+    <string name="tlog">Login to Twitter</string>
+    <string name="tfeed">Twitter Feed</string>
+    <string name="fFeed">Facebook Feed</string>
 
 </resources>
