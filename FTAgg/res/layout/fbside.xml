@@ -31,8 +31,15 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/facebookSide"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="137dp"
         android:text="@string/facebookL" />
 
+    <ListView
+        android:id="@+id/fbFeedListView"
+        android:focusable="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/facebookLogin"
+        android:layout_alignRight="@+id/twitterSide"
+        android:layout_below="@+id/facebookSide" />
 
 </RelativeLayout>
