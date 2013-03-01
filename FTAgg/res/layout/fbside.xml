@@ -29,8 +29,10 @@
         android:id="@+id/facebookLogin"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/facebookSide"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="137dp"
         android:text="@string/facebookL" />
+
 
 </RelativeLayout>
