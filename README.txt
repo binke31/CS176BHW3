@@ -1,4 +1,4 @@
-ECE 150 Project
+CS 176B Project
 Abe
 Joey
 Zack
