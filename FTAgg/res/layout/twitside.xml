@@ -32,5 +32,13 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:text="@string/twitterL" />
+    
+    <ListView
+        android:id="@+id/twitFeedListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/twitterLogin"
+        android:layout_below="@+id/twitterSide"
+        android:focusable="false" />
 
 </RelativeLayout>
