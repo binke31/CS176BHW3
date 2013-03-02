@@ -14,6 +14,7 @@ import com.facebook.SessionLoginBehavior;
 import com.facebook.SessionState;
 
 public class FacebookHalf extends Activity {
+	
 	ListView fbNewsFeed;
 	String[] listContent = {
 			"January",
@@ -36,13 +37,13 @@ public class FacebookHalf extends Activity {
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.fbside);	
-
+		Button twitterSide = (Button) findViewById(R.id.twitterSide);
 		fbNewsFeed = (ListView)findViewById(R.id.fbFeedListView);
 		ArrayAdapter<String> adapter= new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,listContent);
 		fbNewsFeed.setAdapter(adapter);
-		
+
 		fbLogin =(Button) findViewById(R.id.facebookLogin);
-		
+
 
 		Session session = Session.getActiveSession();
 
@@ -58,11 +59,19 @@ public class FacebookHalf extends Activity {
                 session.openForRead(new Session.OpenRequest(this).setCallback(statusCallback));
             }
         }
-
+        
+        twitterSide.setOnClickListener(new OnClickListener(){			
+			@Override
+			public void onClick(View v1){
+				Intent twitIntent = new Intent(v1.getContext(),TwitterHalf.class);
+				v1.getContext().startActivity(twitIntent);
+			}
+			
+		});
         updateView();
 
 	}
-	
+
     private void updateView() {
         Session session = Session.getActiveSession();
         if (session.isOpened()) {
