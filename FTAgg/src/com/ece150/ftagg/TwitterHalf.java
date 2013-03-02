@@ -12,6 +12,7 @@ import android.content.SharedPreferences.Editor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.webkit.WebView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -88,6 +89,18 @@ public class TwitterHalf extends Activity {
 				}
 			}
 		});
+		
+		Button facebookSide = (Button) findViewById(R.id.facebookSide);
+		facebookSide.setOnClickListener(new OnClickListener(){			
+			@Override
+			public void onClick(View v){
+				Intent fbIntent = new Intent(v.getContext(), FacebookHalf.class);
+				v.getContext().startActivity(fbIntent);
+			}
+			
+		});
+		
+		
 	}
 
 	private void loginAuthorizedUser() {
