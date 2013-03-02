@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.facebook.Request;
 import com.facebook.Response;
@@ -31,6 +32,8 @@ public class FacebookHalf extends Activity {
 			"December",
 	};
 
+	
+
 	@Override
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
@@ -39,6 +42,8 @@ public class FacebookHalf extends Activity {
 		fbNewsFeed = (ListView)findViewById(R.id.fbFeedListView);
 		ArrayAdapter<String> adapter= new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,listContent);
 		fbNewsFeed.setAdapter(adapter);
+
+
 
 		Button fbLogin = (Button) findViewById(R.id.facebookLogin);
 
@@ -57,18 +62,20 @@ public class FacebookHalf extends Activity {
 								// callback after Graph API response with user object
 								@Override
 								public void onCompleted(GraphUser user, Response response) {
-									if (user != null) {
-									}
+									if (user != null) {}
 								}
 							});
 						}
 					}
 				});
-
-
 			}
 		});  
+
+
+
+
 	}
+
 
 
 	@Override
