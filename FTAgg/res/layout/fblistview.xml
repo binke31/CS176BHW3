@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height ="?android:attr/listPreferredItemHeight"
+    android:orientation="vertical"
+    android:padding="6dip"
+    android:background="#FFFFFF">
+    
+    <TextView
+        android:id="@+id/fbName"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:singleLine="true" 
+		android:textStyle="bold"
+		android:textSize="16sp"
+		android:textIsSelectable="true"
+		android:layout_toRightOf="@+id/fbProfile"/>
+    
+    <TextView
+		android:id="@+id/fbMessage"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textIsSelectable="true"
+		android:autoLink="web"
+		android:layout_below="@id/fbName"
+		android:layout_toRightOf="@id/fbProfile"/>
+    
+    <ImageView 
+        android:id="@+id/fbProfile"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:src = "@drawable/ic_launcher"
+        android:contentDescription = "@string/app_name"/>
+    
+    <ImageView 
+        android:id="@+id/fbPicture"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_below = "@id/fbMessage"
+        android:contentDescription = "@string/app_name"
+        android:layout_toRightOf="@id/fbProfile"/>
+ 
+   
+    
+</RelativeLayout>
