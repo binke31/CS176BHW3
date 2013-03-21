@@ -1,0 +1,6 @@
+
+
+Building the application only requires having the FacebookSDK as a part of your workspace.
+The Twitter4j.jar file and the Facebook jar files are already included and only need to add
+the FacebookSDK dependency manually through the android project properties. Once the build has 
+been cleared by Eclipse, simply running the project is enough to initiate the main activity. 

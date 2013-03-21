@@ -214,7 +214,7 @@ containing a value of this type.
         public static final int ic_launcher=0x7f02001f;
     }
     public static final class id {
-        public static final int action_settings=0x7f04001e;
+        public static final int action_settings=0x7f040027;
         public static final int com_facebook_login_activity_progress_bar=0x7f040007;
         public static final int com_facebook_picker_activity_circle=0x7f040006;
         public static final int com_facebook_picker_checkbox=0x7f040009;
@@ -234,17 +234,26 @@ containing a value of this type.
         public static final int com_facebook_usersettingsfragment_login_button=0x7f040019;
         public static final int com_facebook_usersettingsfragment_logo_image=0x7f040017;
         public static final int com_facebook_usersettingsfragment_profile_name=0x7f040018;
-        public static final int facebookLogin=0x7f04001a;
+        public static final int dateCreated=0x7f040025;
+        public static final int facebookLogin=0x7f04001e;
         public static final int facebookSide=0x7f040003;
-        public static final int fbFeedListView=0x7f04001b;
+        public static final int fbFeedListView=0x7f04001f;
+        public static final int fbMessage=0x7f04001c;
+        public static final int fbName=0x7f04001a;
+        public static final int fbPicture=0x7f04001d;
+        public static final int fbProfile=0x7f04001b;
         public static final int large=0x7f040002;
         public static final int normal=0x7f040001;
         public static final int picker_subtitle=0x7f040016;
+        public static final int profilePicture=0x7f040022;
+        public static final int realname=0x7f040023;
         public static final int search_box=0x7f040015;
         public static final int small=0x7f040000;
-        public static final int twitFeedListView=0x7f04001d;
-        public static final int twitterLogin=0x7f04001c;
+        public static final int tweetMessage=0x7f040026;
+        public static final int twitFeedListView=0x7f040021;
+        public static final int twitterLogin=0x7f040020;
         public static final int twitterSide=0x7f040004;
+        public static final int username=0x7f040024;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -261,8 +270,10 @@ containing a value of this type.
         public static final int com_facebook_placepickerfragment=0x7f03000b;
         public static final int com_facebook_placepickerfragment_list_row=0x7f03000c;
         public static final int com_facebook_usersettingsfragment=0x7f03000d;
-        public static final int fbside=0x7f03000e;
-        public static final int twitside=0x7f03000f;
+        public static final int fblistview=0x7f03000e;
+        public static final int fbside=0x7f03000f;
+        public static final int twitside=0x7f030010;
+        public static final int twitterfeed=0x7f030011;
     }
     public static final class menu {
         public static final int main=0x7f090000;
@@ -296,11 +307,12 @@ containing a value of this type.
         public static final int com_facebook_usersettingsfragment_log_in_button=0x7f050008;
         public static final int com_facebook_usersettingsfragment_logged_in=0x7f050009;
         public static final int com_facebook_usersettingsfragment_not_logged_in=0x7f05000a;
-        public static final int facebook=0x7f05001d;
-        public static final int facebookL=0x7f05001e;
+        public static final int facebook=0x7f05001e;
+        public static final int facebookL=0x7f05001f;
         public static final int hello_world=0x7f05001b;
-        public static final int twitter=0x7f05001f;
-        public static final int twitterL=0x7f050020;
+        public static final int refr=0x7f05001d;
+        public static final int twitter=0x7f050020;
+        public static final int twitterL=0x7f050021;
     }
     public static final class style {
         /** 

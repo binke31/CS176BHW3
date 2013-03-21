@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:orientation="vertical"
+    android:padding="6dip" >
+
+    <ImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/realname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/profilePicture"
+        android:layout_toRightOf="@id/profilePicture"
+        android:textIsSelectable="true"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/realname"
+        android:layout_toRightOf="@id/profilePicture"
+        android:textIsSelectable="true"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/dateCreated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/profilePicture"
+        android:layout_below="@id/username"
+        android:textSize="12sp"
+        android:textStyle="bold" 
+        android:textIsSelectable="true"/>
+
+    <TextView
+        android:id="@+id/tweetMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profilePicture"
+        android:layout_toRightOf="@id/profilePicture"
+        android:autoLink="web"
+        android:textIsSelectable="true" />
+
+</RelativeLayout>
